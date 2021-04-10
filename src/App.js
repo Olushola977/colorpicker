@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Circle from './circle';
 import ColorThief from "colorthief";
-
+import Logo from './logo.svg';
 
 function App() {
 
@@ -79,9 +79,10 @@ function App() {
                 type="file"
                 id="img"
                 name="img"
+                accept="image/*"
                 className="form-control"
                 onChange={loadFile} />
-              <img alt="" id="output" className="position-absolute p-2" src="" />
+              <img alt="" id="output" className="position-absolute p-2" src={Logo} />
             </div>
             <button
               type="button"
