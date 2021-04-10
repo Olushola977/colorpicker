@@ -3,6 +3,12 @@
   height: 100vh;
   color: #fff;
 }
+@media only screen and (max-width: 768px) {
+  .blackApp {
+    height: 100%;
+  }
+}
+
 .lightApp {
   background-color: rgb(209, 209, 209);
   color: #081e30;

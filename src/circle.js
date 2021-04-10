@@ -8,7 +8,7 @@ const Circle = ({ bg, id, ...rest }) => {
                 background: `${bg}`
             }}
             {...rest}
-            className="colorCircle px-1 py-4"
+            className="colorCircle mx-auto px-1 py-4"
         >
             <p className="">{bg}</p>
         </div>

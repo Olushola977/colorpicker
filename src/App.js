@@ -72,7 +72,7 @@ function App() {
   return (
     <div className="blackApp" id="body">
       <div className="container">
-        <div className="row pt-5">
+        <div className="row pt-5 pb-3">
           <div className="col-lg-5">
             <div className="inputImage position-relative">
               <input
@@ -97,7 +97,7 @@ function App() {
             >Generate</button>
           </div>
           <div className="col-lg-7">
-            <div className="colorGenerated">
+            <div className="colorGenerated mt-4 mt-lg-0">
               <div className="dominantColor text-center card p-1">
                 <h5>Dominant Color</h5>
                 <div className="my-3">
@@ -114,7 +114,7 @@ function App() {
                 <h5 className="text-center">Palette</h5>
                 <div className="palette row mb-3 mt-4">
                   {paletteColours ? paletteColours.map(palcolor => (
-                    <div className="col-lg-2 my-3">
+                    <div className="col-6 col-md-3 col-lg-3 col-xl-2 my-3">
                       <Circle
                         id={palcolor}
                         onClick={click}
