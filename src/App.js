@@ -48,7 +48,10 @@ function App() {
   const click = (e) => {
     const id = e.target;
     const doc = id.innerText;
-    console.log(doc, "id");
+    copyToClipboard(doc)
+  };
+
+  const copyToClipboard = (doc) => {
     const el = document.createElement('textarea');
     el.value = doc;
     el.setAttribute('readonly', '');
@@ -59,7 +62,7 @@ function App() {
     document.execCommand("copy");
     document.body.removeChild(el);
     alert(`Copied to Clipboard`);
-  };
+  }
 
   // const handleDayAndNight = () => {
   //   setBodyState(bodyState = !bodyState);
