@@ -61,7 +61,7 @@ function App() {
     el.select();
     document.execCommand("copy");
     document.body.removeChild(el);
-    alert(`Copied to Clipboard`);
+    alert(`${doc} Copied to Clipboard`);
   }
 
   // const handleDayAndNight = () => {
